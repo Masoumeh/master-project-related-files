@@ -1,0 +1,113 @@
+ //	
+//	HashMap<String, STRtree> trees = new HashMap<String, STRtree>();
+//
+//	/**
+//	 * @param db
+//	 * @param n
+//	 * @return
+//	 * @throws Exception
+//	 */
+//	public Object[] nearestNeighbors(final String db, ANode n) throws Exception {
+//		
+//		STRtree tree = trees.get(db);
+//		final Data data = context.resource.data(db, null);
+//		
+//		if(tree == null) {
+//			File file = data.meta.dbfile("spatial").file();
+//			
+//			ObjectInputStream ois = new ObjectInputStream(
+//					new BufferedInputStream(new FileInputStream(file)));
+//			ois.close();
+//			tree = (STRtree) ois.readObject();
+//			trees.put(db, tree);
+//		}
+//
+//
+//		ValueBuilder vb = new ValueBuilder();
+//		//I .....///////////////////////////////////////////
+//		
+//		ItemDistance itemDist = new ItemDistance() {
+//            @Override
+//      public double distance(ItemBoundable arg0, ItemBoundable arg1) {
+//        Geometry geom1=null, geom2 = null;
+//     
+//        
+//        Nodes n = new Nodes((Integer) arg0.getItem(), data);
+//        ArrayOutput ao = new ArrayOutput().max(10000);
+//        if(n != null)
+//        	try {
+//          n.serialize(Serializer.get(ao));
+//        } catch(IOException e1) {
+//          // TODO Auto-generated catch block
+//          e1.printStackTrace();
+//        }
+//        GMLReader gmlr = new GMLReader();
+//        GeometryFactory geometryFactory = new GeometryFactory();
+//      if (ao.toString().contains("Point") ||
+//      ao.toString().contains("LineString") ||
+//      ao.toString().contains("LinearRing") ||
+//      ao.toString().contains("Polygon") ||
+//      ao.toString().contains("MultiPoint") ||
+//      ao.toString().contains("MultiLineString") ||
+//      ao.toString().contains("MultiPolygon")) {
+//        try {
+//          geom1 = gmlr.read(ao.toString(), geometryFactory);
+//        } catch(SAXException e) {
+//          // TODO Auto-generated catch block
+//          e.printStackTrace();
+//        } catch(IOException e) {
+//          // TODO Auto-generated catch block
+//          e.printStackTrace();
+//        } catch(ParserConfigurationException e) {
+//          // TODO Auto-generated catch block
+//          e.printStackTrace();
+//        }
+//        
+//        n = new Nodes((Integer) arg1.getItem(), data);
+//        ao = new ArrayOutput().max(10000);
+//        if(n != null) try {
+//          n.serialize(Serializer.get(ao));
+//        } catch(IOException e) {
+//          // TODO Auto-generated catch block
+//          e.printStackTrace();
+//        }
+//        gmlr = new GMLReader();
+//        geometryFactory = new GeometryFactory();
+//        try {
+//          geom2 = gmlr.read(ao.toString(), geometryFactory);
+//        } catch(SAXException e) {
+//          // TODO Auto-generated catch block
+//          e.printStackTrace();
+//        } catch(IOException e) {
+//          // TODO Auto-generated catch block
+//          e.printStackTrace();
+//        } catch(ParserConfigurationException e) {
+//          // TODO Auto-generated catch block
+//          e.printStackTrace();
+//        }
+//        
+//        return geom1.distance(geom2);
+//      }
+//            return 0;
+//     }
+//    };
+//    
+//    Object[] ret = tree.nearestNeighbour(itemDist);
+//    System.out.println("ret1: "+ ret[0] + " ret2:  "+  ret[1]);
+//    return ret;
+////    vb.add(new Nodes( (Integer)ret[0], data).);
+////    vb.add(new Nodes( (Integer)ret[1], data));
+////    
+//    
+//    
+//
+//    ///////////////////
+//    //str.nearestNeighbour(env, item, itemDist)
+//  //chris
+////		ItemDistance id = null;
+////		Object o = tree.nearestNeighbour(id);
+//		/// build XQuery value... new DBNode() for each item...
+//	
+////		return vb.value();
+//     
+//	}		
