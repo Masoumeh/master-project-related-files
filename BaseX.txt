@@ -1,0 +1,48 @@
+Function.java
+	* Definitions of all built-in XQuery functions.
+ /* FNGeo functions (EXPath). */ written. (funcs have to be added.)
+	* Namespace mappings for function prefixes and URIs are specified in the
+// EXPath functions
+ URIS.put(FNGeo.class,   GEOURI);
+ 	* static code in the {@code NSGlobal} class.
+query.func package
+	FNgeo.java class has been created.
+
+QueryText.java 
+	* This class assembles text string and tokens required by the XQuery processor
+ 	  implementation.
+ /** GEO URI.*/
+  byte[] GEOURI = token(EXPATH + "geo");NSGlobal.java
+	* Global namespaces.
+	*// EXPath namespaces
+ /** GEO URI.*/
+byte[] GEOURI = token(EXPATH + "geo");
+org.basex.query.util.Err.java -> ???
+	* This class contains all query error messages.
+	// EXPath modules
+	// EXPath errors
+org.basex.query.util.pkg.RepoManager.java
+	* Repository manager.
+	 // traverse EXPath packages
+		->  final TokenMap pkg = repo.pkgDict();
+		->  public StringList list()
+org.basex.query.util.pkg.Pero.java
+	* EXPath repository context.
+
+org.basex.query.util.pkg.PkgText.java
+	* This class assembles textual information for package handling.
+	 /** Package descriptor
+	 /** EXPath type. */
+	 String EXPATH = "EXPath";
+org.basex.query.util.pkg.ModuleLoader.java
+	* Module loader.
+	 // add EXPath package
+org.basex.query.util.http.HTTPText.java
+	 * HTTP strings.
+	// Serialization methods defined by the EXPath specification.
+org.basex.query.func.FNRepo.java
+	 * Functions on EXPath packages.
+org.basex.gui.dialog.DialogPackages.java
+	 * Open database dialog.
+	 type.setText(PkgText.EXPATH);
+	
