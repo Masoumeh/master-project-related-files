@@ -1,0 +1,17 @@
+http://graphics.cs.msu.ru/en/science/research/3dpoint/lidark
+https://github.com/libspatialindex/libspatialindex 	
+
+http://sourceforge.net/tracker/index.php?func=detail&aid=3154412&group_id=128875&atid=713123
+http://docs.geotools.org/latest/userguide/library/jts/index.html
+http://sourceforge.net/mail/?group_id=128875
+http://docs.codehaus.org/display/GEOTOOLS/Summer+of+Code+2009
+http://docs.codehaus.org/display/GEOTOOLS/Rendering+Optimization
+http://dbs.mathematik.uni-marburg.de/research/projects/xxl/xxl.html
+http://stackoverflow.com/questions/7435645/java-commercial-friendly-r-tree-implementation?rq=1
+http://lists.refractions.net/pipermail/jts-devel/2007-September/002161.html
+http://redefinedhorizonsblog.com/category/computational-geometry/java-topology-suite/
+
+http://java.dzone.com/articles/spatial-index-rtree
+http://lists.refractions.net/pipermail/jts-devel/2004-June/000745.html
+http://workshops.opengeo.org/postgis-intro/indexing.html#how-spatial-indexes-work
+http://gis.stackexchange.com/questions/33293/how-to-create-rtree-index-on-linestring-geometry

@@ -1,0 +1,72 @@
+geo-index-function:
+
+
+1584 results:
+***
+Visit size: 1867
+Single geometry Read: 248.15 ms
+visit: 7.69 ms
+read total geometries in DB: 1256.13 ms
+test JTS function: 566.31 ms
+total:2171 ms
+
+***
+Visit size: 1867
+STRtree Read Time: 2.74 ms
+Single geometry Read: 2.74 ms
+visit: 7.85 ms
+read total geometries in DB: 1270.51 ms
+test JTS function: 568.2 ms
+total: 2194.19 ms
+
+194 results:
+Single geometry Read: 4.26 ms
+visit: 11.16 ms
+read total geometries in DB: 1646.35 ms
+test JTS function: 146.9 ms
+total: 2120.89 ms
+
+
+1778 results:
+Single geometry Read: 3.97 ms
+visit: 11.21 ms
+read total geometries in DB: 1293.69 ms
+test JTS function: 635.91 ms
+total: 2291.33 ms
+
+geoFunction+geoIndex:
+
+1778 results:
+read single input: 1258.07 ms
+read geometries in DB: 1162.86 ms
+test JTS function: 684.22 ms
+total :31316 ms
+
+read single input: 1280.81 ms
+read geometries in DB: 1188.12 ms
+test JTS function: 626.88 ms
+total :3131.6 ms
+
+1584 results:
+read single input: 1339.86 ms
+read geometries in DB: 1171.91 ms
+test JTS function: 592.15 ms
+total:3171.88 ms
+
+194 results:
+read single input: 1256.92 ms
+read geometries in DB: 1290.53 ms
+test JTS function: 688.16 ms
+total: 3270.29 ms
+
+************************************************************************
+New Profile:
+
+Testing Geo:exterior-ring(polygon):
+total: 67.33 ms
+Create OuterRing:6.72 ms
+Create InnerRing:0.4 ms
+Create CoordinateSeq time:1.64 ms
+Create Ring time:3.67 ms
+JTS Function (find exterior ring and make a line string): 15.9 ms
+Geometry write out (JTS gmlWriter):33.28 ms

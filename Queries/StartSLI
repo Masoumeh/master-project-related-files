@@ -1,0 +1,5 @@
+StartSLI run config.:
+
+Main tab: project-> basex-api, class-> StartSLI
+Argumenta tab: program arg. -> -V /home/rostam/Desktop/xq-performance/test.xq	VM arg. -> -Xrunhprof:cpu=samples,depth=20
+

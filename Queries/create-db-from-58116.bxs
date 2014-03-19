@@ -1,0 +1,3 @@
+set createfilter *.gml
+create db 58116-SX9192-2c1-wgs84 "/home/rostam/Desktop/important/BaseX/Sample gml/topo/Initial/58116-SX9192-2c1-wgs84/58116-SX9192-2c1-wgs84.zip"
+create index SPATIAL
